@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Los Santos Police Department</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+
+<button id="btn_modal_window">Сообщение от сайта!</button>
+  <div id="my_modal" class="modal">
+    <div class="modal_content">
+      <span class="close_modal_window">Закрыть</span>
+      <p>Некоторые раздела сайта пока находятся в разработке и могут быть не доступны</p>
+    </div>
+  </div>
+
+  <script>
+var modal = document.getElementById("my_modal");
+ var btn = document.getElementById("btn_modal_window");
+ var span = document.getElementsByClassName("close_modal_window")[0];
+
+ btn.onclick = function () {
+    modal.style.display = "block";
+ }
+
+ span.onclick = function () {
+    modal.style.display = "none";
+ }
+
+ window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  
+<div id="container">
+  <div id="header"> <a href="index.html"></a> </div>
+  <div id="menu"> <a href="index.html">ГЛАВНАЯ</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="menu/index1.html">О ДЕПАРТАМЕНТЕ</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="">НОВОСТИ</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="">АКАДЕМИЯ</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="">РУКОВОДСТВО</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+  <a href="">OOC РАЗДЕЛ</a>
+  </div> 
+ 
+  <div id="content">
+<h1>Добро пожаловать на официальный сайт департамента полиции Лос Сантоса</h1>
+<br>
+<img src="image/1.png" align="left" vspace="1" border="3" alt="" height=400;>
+<p>Штаб-квартира LSPD. Першинг-Сквер. </p>
+</br>
+
+</div>
+  <div id="footer"> &copy;2020 Designed by <a href="https://vk.com/id394651855">Volkov</a> &nbsp;<span class="separator">|</span>&nbsp; SAPD </div>
+</div>
+</body>
+</html>
